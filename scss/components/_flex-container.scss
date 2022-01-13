@@ -1,0 +1,24 @@
+.flex-container {
+    @include box($width: 30%, $height: 20%);
+    box-sizing: border-box;
+    border: 4px solid $color-flex-container-border;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container:first-child {
+    background-color: black;
+    @include animate-ascend-in($delay: 0s);
+}
+
+.flex-container:nth-child(2) {
+    background-color: red;
+    @include animate-ascend-in($delay: 3s);
+}
+
+.flex-container:last-child {
+    background-color: orange;
+    @include animate-ascend-in($delay: 6s);
+}

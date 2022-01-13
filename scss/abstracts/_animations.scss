@@ -1,0 +1,19 @@
+/**
+ * Ascend in.
+ */
+
+@keyframes ascend-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@mixin animate-ascend-in($delay: 1.5s) {
+  animation-name: ascend-in;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: $delay;
+}
